@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "e2a00ad6-1f43-49ec-aaff-81a1c2449803",
+		"name": "4339 PROJECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ { \"eventType\": \"Clothing Distribution\", \"locationName\": \"NRG Stadium\", \"address\": \"713 Cool st\", \"city\": \"Houston\", \"state\": \"Texas\", \"zip\": 54321, \"eventDate\": \"11/11/2021\", \"firstName\": \"Cristiano\", \"lastName\": \"Ronaldo\", \"dob\": \"02/05/1985\", \"phone\": \"281-330-8004\", \"type\": \"Social Media\", \"specify\": \"Instagram\", \"wantTheVaccine\": \"yes\", \"vaccinePreference\": \"Moderna\", \"vaccinationStatus\": \"no\", \"needAdditionalSupportServices\": \"Nutritional Support\", \"numberChildInHH\": 4, \"anyoneInHHover65\": \"no\", \"veteran\": \"no\", \"race\": \"White\" } , { \"eventType\": \"Food Distribution\", \"locationName\": \"BBVA Stadium\", \"address\": \"123 Sweet st\", \"city\": \"Houston\", \"state\": \"Texas\", \"zip\": 77713, \"eventDate\": \"10/10/2021\", \"firstName\": \"Lionel\", \"lastName\": \"Messi\", \"dob\": \"06/24/1987\", \"phone\": \"281-832-0001\", \"type\": \"Social Media\", \"specify\": \"Facebook\", \"wantTheVaccine\": \"yes\", \"vaccinePreference\": \"Pfizer\", \"vaccinationStatus\": \"no\", \"needAdditionalSupportServices\": \"Nutritional Support\", \"numberChildInHH\": 2, \"anyoneInHHover65\": \"no\", \"veteran\": \"no\", \"race\": \"White\" } , { \"eventType\": \"Food Distribution\", \"locationName\": \"BBVA Stadium\", \"address\": \"123 Sweet st\", \"city\": \"Houston\", \"state\": \"Texas\", \"zip\": 77713, \"eventDate\": \"10/10/2021\", \"firstName\": \"Cristiano\", \"lastName\": \"Ronaldo\", \"dob\": \"02/05/1985\", \"phone\": \"281-330-8004\", \"type\": \"Social Media\", \"specify\": \"Facebook\", \"wantTheVaccine\": \"yes\", \"vaccinePreference\": \"Moderna\", \"vaccinationStatus\": \"no\", \"needAdditionalSupportServices\": \"Nutritional Support\", \"numberChildInHH\": 4, \"anyoneInHHover65\": \"no\", \"veteran\": \"no\", \"race\": \"White\" } , { \"eventType\": \"Clothing Distribution\", \"locationName\": \"Toyota Center\", \"address\": \"1738 Deez Blvd\", \"city\": \"Houston\", \"state\": \"Texas\", \"zip\": 98666, \"eventDate\": \"10/30/2021\", \"firstName\": \"Neymar\", \"lastName\": \"da Silva Santos Junior\", \"dob\": \"02/05/1992\", \"phone\": \"281-832-0001\", \"type\": \"Social Media\", \"specify\": \"Facebook\", \"wantTheVaccine\": \"no\", \"vaccinePreference\": \"N/A\", \"vaccinationStatus\": \"yes\", \"needAdditionalSupportServices\": \"Nutritional Support\", \"numberChildInHH\": 1, \"anyoneInHHover65\": \"no\", \"veteran\": \"no\", \"race\": \"White\" } , { \"eventType\": \"Clothing Distribution\", \"locationName\": \"Toyota Center\", \"address\": \"1738 Deez Blvd\", \"city\": \"Houston\", \"state\": \"Texas\", \"zip\": 98666, \"eventDate\": \"10/30/2021\", \"firstName\": \"Paul\", \"lastName\": \"Pogba\", \"dob\": \"03/15/1993\", \"phone\": \"956-001-4567\", \"type\": \"Social Media\", \"specify\": \"Instagram\", \"wantTheVaccine\": \"no\", \"vaccinePreference\": \"N/A\", \"vaccinationStatus\": \"yes\", \"needAdditionalSupportServices\": \"No\", \"numberChildInHH\": 1, \"anyoneInHHover65\": \"no\", \"veteran\": \"no\", \"race\": \"Black\" } , { \"eventType\": \"Clothing Distribution\", \"locationName\": \"Toyota Center\", \"address\": \"1738 Deez Blvd\", \"city\": \"Houston\", \"state\": \"Texas\", \"zip\": 98666, \"eventDate\": \"10/30/2021\", \"firstName\": \"Paul\", \"lastName\": \"Sugma\", \"dob\": \"01/01/1999\", \"phone\": \"817-333-4424\", \"type\": \"Social Media\", \"specify\": \"Instagram\", \"wantTheVaccine\": \"no\", \"vaccinePreference\": \"N/A\", \"vaccinationStatus\": \"yes\", \"needAdditionalSupportServices\": \"No\", \"numberChildInHH\": 1, \"anyoneInHHover65\": \"no\", \"veteran\": \"no\", \"race\": \"Black\" } ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/form",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"form"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/forms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ by id form",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/forms-result/cc52bfd1-265a-11ec-879f-cb375f5e39da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms-result",
+						"cc52bfd1-265a-11ec-879f-cb375f5e39da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE form",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"_id\": \"cc52bfd1-265a-11ec-879f-cb375f5e39da\",\r\n        \"eventType\": \"Food Distribution\",\r\n        \"locationName\": \"BBVA Stadium\",\r\n        \"address\": \"666 Sweet st\",\r\n        \"city\": \"Houston\",\r\n        \"state\": \"Texas\",\r\n        \"zip\": 77713,\r\n        \"eventDate\": \"2021-10-10T05:00:00.000Z\",\r\n        \"firstName\": \"Lionel\",\r\n        \"lastName\": \"Messi\",\r\n        \"dob\": \"1987-06-24T05:00:00.000Z\",\r\n        \"phone\": \"281-832-0001\",\r\n        \"type\": \"Social Media\",\r\n        \"specify\": \"Facebook\",\r\n        \"wantTheVaccine\": \"yes\",\r\n        \"vaccinePreference\": \"Pfizer\",\r\n        \"vaccinationStatus\": \"no\",\r\n        \"needAdditionalSupportServices\": \"Nutritional Support\",\r\n        \"numberChildInHH\": 2,\r\n        \"anyoneInHHover65\": \"no\",\r\n        \"veteran\": \"no\",\r\n        \"race\": \"White\",\r\n        \"signupDate\": \"2021-10-06T04:06:35.853Z\",\r\n        \"__v\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/forms/cc52bfd1-265a-11ec-879f-cb375f5e39da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms",
+						"cc52bfd1-265a-11ec-879f-cb375f5e39da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE form",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete-forms/cc52bfd1-265a-11ec-879f-cb375f5e39da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete-forms",
+						"cc52bfd1-265a-11ec-879f-cb375f5e39da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1) Info in individuals served at certain events/locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/forms/Toyota%20Center",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms",
+						"Toyota%20Center"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.1) Create event form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ { \"eventType\": \"Food Distribution\", \"locationName\": \"BBVA Stadium\", \"eventDate\": \"09/30/2021\" } , { \"eventType\": \"Clothing Distribution\", \"locationName\": \"NRG Stadium\", \"eventDate\": \"12/30/2020\" } , { \"eventType\": \"Clothing Distribution\", \"locationName\": \"Toyota Center\", \"eventDate\": \"10/31/2019\" } , { \"eventType\": \"Clothing Distribution\", \"locationName\": \"Toyota Center\", \"eventDate\": \"10/28/2019\" } ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/eventform",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eventform"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.2) Read event form",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/eventforms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eventforms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by id event form",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/eventforms/4f991b50-3b96-11ec-ae7b-0932ff56b62b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eventforms",
+						"4f991b50-3b96-11ec-ae7b-0932ff56b62b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.3) Update event form",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/eventforms/92b1bd10-2625-11ec-aace-0770e4282e54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"eventforms",
+						"92b1bd10-2625-11ec-aace-0770e4282e54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.4) Delete event form by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/event-delete-forms/92b1bd10-2625-11ec-aace-0770e4282e54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"event-delete-forms",
+						"92b1bd10-2625-11ec-aace-0770e4282e54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3) Get 3 current events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/most-currentevent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"most-currentevent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.1) Individual data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/individual-data/Cristiano/Ronaldo/1985-02-05T06:00:00.000Z/281-330-8004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"individual-data",
+						"Cristiano",
+						"Ronaldo",
+						"1985-02-05T06:00:00.000Z",
+						"281-330-8004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.2) Individual times",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/individual-total/Cristiano/Ronaldo/1985-02-05T06:00:00.000Z/281-330-8004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"individual-total",
+						"Cristiano",
+						"Ronaldo",
+						"1985-02-05T06:00:00.000Z",
+						"281-330-8004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.1) Individual's history/info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/individual-info/Cristiano/Ronaldo/1985-02-05T06:00:00.000Z/281-330-8004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"individual-info",
+						"Cristiano",
+						"Ronaldo",
+						"1985-02-05T06:00:00.000Z",
+						"281-330-8004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.2) Individual Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/individual-count/Cristiano/Ronaldo/1985-02-05T06:00:00.000Z/281-330-8004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"individual-count",
+						"Cristiano",
+						"Ronaldo",
+						"1985-02-05T06:00:00.000Z",
+						"281-330-8004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.1) Event Type Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/forms-eventType/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms-eventType",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.2) Zip Code Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/forms-zip/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms-zip",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total by Event Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/forms-eventType/Food%20Distro/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forms-eventType",
+						"Food%20Distro",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
